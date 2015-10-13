@@ -192,7 +192,7 @@ git config --global push.default simple
 
 ```bash
 git clone git@github.com:aldomann/sublime-orchis.git \
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Theme\ -\ Orchis Dark
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Theme\ -\ Orchis\ Dark
 
 git clone git@github.com:shovelandsandbox/glacier-theme.git \
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Color\ Scheme\ -\ Glacier
