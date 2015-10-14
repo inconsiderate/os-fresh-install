@@ -182,6 +182,13 @@ git config --global github.user inconsiderate && \
 git config --global core.editor "subl -w" && \
 git config --global color.ui true && \
 git config --global push.default simple
+
+#set git global ignore file
+touch ~/.gitignore && \
+git config --get core.excludesfile `~/.gitignore' && \
+echo ".DS_Store" >> ~/.gitignore && \
+echo ".gitignore" >> ~/.gitignore && \
+echo "*.log" >> ~/.gitignore
 ```
 
 ###Sublime Text
