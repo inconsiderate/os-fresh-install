@@ -115,13 +115,8 @@ nginx \
 ####Homebrew Cask Apps
 
 ```bash
-# add support for fonts
-brew tap caskroom/fonts
 
-#add dev/beta versions
-brew tap caskroom/versions
-
-#install mac apps & fonts
+#install mac apps
 brew cask install \
 blueharvest \
 cleanmymac \
