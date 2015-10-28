@@ -180,7 +180,7 @@ git config --global push.default simple
 
 #set git global ignore file
 touch ~/.gitignore && \
-git config --get core.excludesfile `~/.gitignore' && \
+git config --get core.excludesfile '~/.gitignore' && \
 echo ".DS_Store" >> ~/.gitignore && \
 echo ".gitignore" >> ~/.gitignore && \
 echo "*.log" >> ~/.gitignore
