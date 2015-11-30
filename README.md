@@ -172,7 +172,7 @@ ssh -T git@github.com
 
 #set git config values
 git config --global user.name "Michael Kant" && \
-git config --global user.email "meiskant@gmail.com" && \
+git config --global user.email "michaelkant@live.com" && \
 git config --global github.user inconsiderate && \
 git config --global core.editor "subl -w" && \
 git config --global color.ui true && \
