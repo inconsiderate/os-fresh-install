@@ -204,26 +204,34 @@ git clone git@github.com:aldomann/sublime-orchis.git \
 
 git clone git@github.com:shovelandsandbox/glacier-theme.git \
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Color\ Scheme\ -\ Glacier
+
+git clone git@github.com:equinusocio/material-theme.git \
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Theme\ -\ Material
 ```
 
 ####Settings
 
 ```json
 {
+	"always_show_minimap_viewport": false,
+	"bold_folder_labels": true,
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Theme - Glacier/glacier.tmTheme",
-	"font_size": 14,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"font_size": 10,
 	"highlight_modified_tabs": true,
-
-	"ignored_packages":
+	"indent_guide_options":
 	[
-		"Vintage"
+		"draw_normal",
+		"draw_active"
 	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"overlay_scroll_bars": "enabled",
 	"show_full_path": true,
 	"show_tab_close_buttons": false,
 	"spell_check": false,
 	"tab_size": 4,
-	"theme": "Orchis Dark.sublime-theme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"word_wrap": "true"
 }
 
