@@ -118,12 +118,9 @@ nginx \
 
 #install mac apps
 brew cask install \
-blueharvest \
-cleanmymac \
 codekit \
 ghostlab \
 google-chrome \
-iterm2 \
 macdown \
 slack \
 spectacle \
@@ -147,7 +144,7 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git \
 ####Set hostname
 
 ```bash
-sudo scutil --set HostName Work
+sudo scutil --set HostName kantbook
 ```
 
 ###Agree To Xcode
@@ -162,7 +159,7 @@ sudo xcrun cc
 ####Setup Github
 
 ```bash
-ssh-keygen -t rsa -C "meiskant@gmail.com"
+ssh-keygen -t rsa -C "contact@michaelkant.com"
 
 #copy ssh key to clipboard for adding to github.com
 pbcopy < ~/.ssh/id_rsa.pub
@@ -172,7 +169,7 @@ ssh -T git@github.com
 
 #set git config values
 git config --global user.name "Michael Kant" && \
-git config --global user.email "michaelkant@live.com" && \
+git config --global user.email "contact@michaelkant.com" && \
 git config --global github.user inconsiderate && \
 git config --global core.editor "subl -w" && \
 git config --global color.ui true && \
@@ -183,6 +180,7 @@ touch ~/.gitignore && \
 git config --get core.excludesfile '~/.gitignore' && \
 echo ".DS_Store" >> ~/.gitignore && \
 echo ".gitignore" >> ~/.gitignore && \
+echo ".idea" >> ~/.gitignore && \
 echo "*.log" >> ~/.gitignore
 
 #tell git to ignore chmod's
