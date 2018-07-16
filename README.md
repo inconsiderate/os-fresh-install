@@ -3,7 +3,7 @@
 
 ```bash
 
-#install CLI developer tools because El Capitan is a bitch
+# install CLI developer tools because El Capitan is a bitch
 xcode-select --install
 
 # Enable character repeat on keydown
@@ -81,7 +81,7 @@ defaults write org.webkit.nightly.WebKit StartPageDisabled -bool true
 
 ```
 
-###Shell
+### Shell
 ---
 
 ### Install Oh-My-ZSH
@@ -91,7 +91,7 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 ```
 
 
-####Homebrew
+#### Homebrew
 
 ```bash
 # install package manager
@@ -112,7 +112,7 @@ brew install \
 nginx \
 ```
 
-####Homebrew Cask Apps
+#### Homebrew Cask Apps
 
 ```bash
 
@@ -130,7 +130,7 @@ virtualbox \
 webstorm
 ```
 
-####Update .zshrc
+#### Update .zshrc
 
 ```bash
 wget https://gist.githubusercontent.com/saetia/2764210/raw/ab099b587689640eb32cbc1afdb6a19b62be7fb0/.zshrc -O \
@@ -141,13 +141,13 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git \
 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
-####Set hostname
+#### Set hostname
 
 ```bash
 sudo scutil --set HostName kantbook
 ```
 
-###Agree To Xcode
+### Agree To Xcode
 ```bash
 sudo xcrun cc
 ```
@@ -190,7 +190,7 @@ git config --global core.filemode false
 alias gitlog="git log --graph --decorate --date=relative --format=format:'%C(bold blue)%H%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(red)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
 
-###Visual Studio Code
+### Visual Studio Code
 ---
 
 ```json
@@ -215,7 +215,7 @@ alias gitlog="git log --graph --decorate --date=relative --format=format:'%C(bol
 ```
 
 
-###Etc
+### Etc
 
 ---
 
