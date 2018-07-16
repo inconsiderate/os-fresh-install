@@ -190,48 +190,34 @@ git config --global core.filemode false
 alias gitlog="git log --graph --decorate --date=relative --format=format:'%C(bold blue)%H%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(red)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
 
-###Sublime Text
-
+###Visual Studio Code
 ---
 
-####Install Themes
-
-```bash
-git clone git@github.com:aldomann/sublime-orchis.git \
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Theme\ -\ Orchis\ Dark
-
-git clone git@github.com:shovelandsandbox/glacier-theme.git \
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Color\ Scheme\ -\ Glacier
-
-git clone git@github.com:equinusocio/material-theme.git \
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Theme\ -\ Material
+```json
+//keybindings.json
+[
+    {
+      "key": "ctrl+shift+up",
+      "command": "editor.action.moveLinesUpAction",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+down",
+      "command": "editor.action.moveLinesDownAction",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+D",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "editorTextFocus"
+    }
+  ]
 ```
 
-####Settings
 
-```json
-{
-	"always_show_minimap_viewport": false,
-	"bold_folder_labels": true,
-	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"font_size": 10,
-	"highlight_modified_tabs": true,
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"overlay_scroll_bars": "enabled",
-	"show_full_path": true,
-	"show_tab_close_buttons": false,
-	"spell_check": false,
-	"tab_size": 4,
-	"theme": "Material-Theme-Darker.sublime-theme",
-	"word_wrap": "true"
-}
+###Etc
+
+---
 
 ```
 
