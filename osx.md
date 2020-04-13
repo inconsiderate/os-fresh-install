@@ -119,7 +119,7 @@ nginx \
 
 ```bash
 
-#install mac apps
+# install mac apps
 brew cask install \
 codekit \
 ghostlab \
@@ -139,7 +139,7 @@ webstorm
 wget https://gist.githubusercontent.com/saetia/2764210/raw/ab099b587689640eb32cbc1afdb6a19b62be7fb0/.zshrc -O \
 ~/.zshrc
 
-#syntax highlighting
+# syntax highlighting
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git \
 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
@@ -155,30 +155,30 @@ sudo scutil --set HostName kantbook
 sudo xcrun cc
 ```
 
-###Git
+### Git
 
 ---
 
-####Setup Github
+#### Setup Github
 
 ```bash
 ssh-keygen -t rsa -C "contact@michaelkant.com"
 
-#copy ssh key to clipboard for adding to github.com
+# Copy ssh key to clipboard for adding to github.com
 pbcopy < ~/.ssh/id_rsa.pub
 
-#test connection
+# Test connection
 ssh -T git@github.com
 
-#set git config values
+# Set git config values
 git config --global user.name "Michael Kant" && \
-git config --global user.email "contact@michaelkant.com" && \
+git config --global user.email "meiskant@gmail.com" && \
 git config --global github.user inconsiderate && \
-git config --global core.editor "subl -w" && \
+git config --global core.editor "code" && \
 git config --global color.ui true && \
 git config --global push.default simple
 
-#set git global ignore file
+# Set git global ignore file
 touch ~/.gitignore && \
 git config --get core.excludesfile '~/.gitignore' && \
 echo ".DS_Store" >> ~/.gitignore && \
@@ -186,11 +186,11 @@ echo ".gitignore" >> ~/.gitignore && \
 echo ".idea" >> ~/.gitignore && \
 echo "*.log" >> ~/.gitignore
 
-#tell git to ignore chmod's
+# Tell git to ignore chmod's
 git config --global core.filemode false
 
-#alias gitlog to show more detail and pretty colors
-alias gitlog="git log --graph --decorate --date=relative --format=format:'%C(bold blue)%H%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(red)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+# Alias gitlog to show more detail and pretty colors in ZSH
+echo 'alias gitlog="git log --graph --decorate --date=relative --format=format:'%C(bold blue)%H%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(red)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"' >> ~/.zshrc
 ```
 
 ### Visual Studio Code
