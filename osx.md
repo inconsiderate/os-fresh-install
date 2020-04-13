@@ -162,7 +162,7 @@ sudo xcrun cc
 #### Setup Github
 
 ```bash
-ssh-keygen -t rsa -C "contact@michaelkant.com"
+ssh-keygen -t rsa -C "meiskant@gmail.com"
 
 # Copy ssh key to clipboard for adding to github.com
 pbcopy < ~/.ssh/id_rsa.pub
