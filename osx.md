@@ -25,6 +25,9 @@ defaults write com.apple.dashboard enabled-state 2
 defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 
+# Show hidden files in Finder
+defaults write com.apple.finder AppleShowAllFiles YES
+
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
