@@ -15,6 +15,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 12
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 
+# Set mouse acceleration to 1
+defaults write .GlobalPreferences com.apple.mouse.scaling 1
+
 # Disable window animations ("new window" scale effect)
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
