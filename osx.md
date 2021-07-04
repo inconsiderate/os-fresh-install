@@ -85,6 +85,8 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 # Disable WebkitNightly.app's homepage
 defaults write org.webkit.nightly.WebKit StartPageDisabled -bool true
 
+# Play WoW? Make your back/forward mouse buttons behave properly
+defaults write com.blizzard.worldofwarcraft disable-expose-fix -bool YES
 ```
 
 ### Shell
