@@ -198,8 +198,30 @@ echo 'alias gitlog="git log --graph --decorate --date=relative --format=format:'
 ### Visual Studio Code
 ---
 
+Pro-tip: you can launch vscode and openn your current directory by typing `code .` 
+
+#### Install Extensions
+```bash
+echo "alexcvzz.vscode-sqlite
+EditorConfig.EditorConfig
+esbenp.prettier-vscode
+felixfbecker.php-debug
+GrapeCity.gc-excelviewer
+kisstkondoros.vscode-gutter-preview
+mblode.twig-language-2
+mindpixel-labs.vsc-expressionengine
+mrmlnc.vscode-apache
+ms-azuretools.vscode-docker
+ms-dotnettools.csharp
+ms-vscode-remote.remote-containers
+whatwedo.twig
+yzhang.markdown-all-in-one" >> vs_code_extensions.md && xargs -n1 code --install-extension < vs_code_extensions.md && rm vs_code_extensions.md
+```
+
+#### Key Bindings
+Access this file with `cmd+shift+p` and select Keyboard Shortcuts (JSON)
+
 ```json
-//keybindings.json
 [
     {
       "key": "ctrl+shift+up",
@@ -219,8 +241,25 @@ echo 'alias gitlog="git log --graph --decorate --date=relative --format=format:'
   ]
 ```
 
+#### General Settings
+Access this file with `cmd+shift+p` and select Settings (JSON)
 
-### Etc
+```json
+"editor.largeFileOptimizations": false,
+"editor.wordWrap": "on",
+"security.workspace.trust.untrustedFiles": "open",
+"files.trimFinalNewlines": true,
+"editor.formatOnPaste": true,
+"workbench.editor.highlightModifiedTabs": true,
+"editor.acceptSuggestionOnEnter": "off",
+"editor.tabSize": 4,
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.formatOnPaste": true,
+"editor.formatOnSave": true
+```
+
+
+### MISC
 
 ---
 
