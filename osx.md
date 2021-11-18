@@ -127,15 +127,12 @@ nginx \
 # install mac apps
 brew cask install \
 codekit \
-ghostlab \
+docker \
 google-chrome \
-macdown \
 slack \
 spectacle \
-sublime-text3 \
-vagrant \
-virtualbox \
-webstorm
+visual-studio-code \
+intellij-idea
 ```
 
 #### Update .zshrc
@@ -167,7 +164,7 @@ sudo xcrun cc
 #### Setup Github
 
 ```bash
-ssh-keygen -t rsa -C "meiskant@gmail.com"
+ssh-keygen -t rsa -C "MY_EMAIL_ADDRESS"
 
 # Copy ssh key to clipboard for adding to github.com
 pbcopy < ~/.ssh/id_rsa.pub
@@ -176,8 +173,8 @@ pbcopy < ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 
 # Set git config values
-git config --global user.name "Michael Kant" && \
-git config --global user.email "meiskant@gmail.com" && \
+git config --global user.name "inconsiderate" && \
+git config --global user.email "MY_EMAIL_ADDRESS" && \
 git config --global github.user inconsiderate && \
 git config --global core.editor "code" && \
 git config --global color.ui true && \
