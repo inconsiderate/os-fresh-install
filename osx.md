@@ -249,21 +249,18 @@ Access this file with `cmd+shift+p` and select Settings (JSON)
 "editor.wordWrap": "on",
 "security.workspace.trust.untrustedFiles": "open",
 "files.trimFinalNewlines": true,
-"editor.formatOnPaste": true,
 "workbench.editor.highlightModifiedTabs": true,
 "editor.acceptSuggestionOnEnter": "off",
 "editor.tabSize": 4,
 "editor.defaultFormatter": "esbenp.prettier-vscode",
+"prettier.tabWidth": 4,
 "editor.formatOnPaste": true,
 "editor.formatOnSave": true
 ```
 
-
 ### MISC
 
 ---
-
-```
 
 ### Ruby version manager
 ---
