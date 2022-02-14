@@ -198,12 +198,11 @@ echo 'alias gitlog="git log --graph --decorate --date=relative --format=format:'
 ### Visual Studio Code
 ---
 
-Pro-tip: you can launch vscode and openn your current directory by typing `code .` 
+Pro-tip: you can launch vscode and open your current directory by typing `code .` 
 
 #### Install Extensions
 ```bash
 echo "alexcvzz.vscode-sqlite
-EditorConfig.EditorConfig
 esbenp.prettier-vscode
 felixfbecker.php-debug
 GrapeCity.gc-excelviewer
@@ -215,6 +214,8 @@ ms-azuretools.vscode-docker
 ms-dotnettools.csharp
 ms-vscode-remote.remote-containers
 whatwedo.twig
+junstyle.php-cs-fixer
+editorconfig.editorconfig
 yzhang.markdown-all-in-one" >> vs_code_extensions.md && xargs -n1 code --install-extension < vs_code_extensions.md && rm vs_code_extensions.md
 ```
 
@@ -254,8 +255,8 @@ Access this file with `cmd+shift+p` and select Settings (JSON)
 "editor.tabSize": 4,
 "editor.defaultFormatter": "esbenp.prettier-vscode",
 "prettier.tabWidth": 4,
-"editor.formatOnPaste": true,
-"editor.formatOnSave": true
+"editor.formatOnPaste": false,
+"editor.formatOnSave": false
 ```
 
 ### MISC
