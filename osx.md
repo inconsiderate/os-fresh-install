@@ -125,14 +125,16 @@ nginx \
 ```bash
 
 # install mac apps
-brew cask install \
+brew install \
 codekit \
 docker \
 google-chrome \
 slack \
-spectacle \
-visual-studio-code \
-intellij-idea
+discord \
+rectangle \
+transmit \
+sequel-pro \
+visual-studio-code
 ```
 
 #### Update .zshrc
