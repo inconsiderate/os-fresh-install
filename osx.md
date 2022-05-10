@@ -110,25 +110,20 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 # install package manager
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# install homebrew packages
+# install brew packages
 brew install \
 tree \
 node \
 ssh-copy-id \
 wget \
 ack \
-caskroom/cask/brew-cask
-```
-
-```bash
-brew install \
-nginx \
+caskroom/cask/brew-cask \
+nginx
 ```
 
 #### Homebrew Cask Apps
 
 ```bash
-
 # install mac apps
 brew install \
 codekit \
@@ -139,7 +134,9 @@ discord \
 rectangle \
 transmit \
 sequel-pro \
-visual-studio-code
+visual-studio-code \
+iterm2 \
+fig
 ```
 
 #### Set hostname
