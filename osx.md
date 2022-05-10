@@ -92,18 +92,6 @@ defaults write com.blizzard.worldofwarcraft disable-expose-fix -bool YES
 ### Shell
 ---
 
-#### Install and setup terminal
-
-Install iTerm2: https://iterm2.com/downloads.html
-
-Install Fig: https://fig.io/
-
-```bash
-# Install powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-```
-
 #### Homebrew
 
 ```bash
@@ -137,6 +125,12 @@ sequel-pro \
 visual-studio-code \
 iterm2 \
 fig
+```
+
+```bash
+# Install powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
 #### Set hostname
