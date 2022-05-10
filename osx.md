@@ -92,12 +92,17 @@ defaults write com.blizzard.worldofwarcraft disable-expose-fix -bool YES
 ### Shell
 ---
 
-### Install Oh-My-ZSH
+#### Install and setup terminal
+
+Install iTerm2: https://iterm2.com/downloads.html
+
+Install Fig: https://fig.io/
 
 ```bash
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+# Install powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
-
 
 #### Homebrew
 
@@ -135,17 +140,6 @@ rectangle \
 transmit \
 sequel-pro \
 visual-studio-code
-```
-
-#### Update .zshrc
-
-```bash
-wget https://gist.githubusercontent.com/saetia/2764210/raw/ab099b587689640eb32cbc1afdb6a19b62be7fb0/.zshrc -O \
-~/.zshrc
-
-# syntax highlighting
-git clone git://github.com/zsh-users/zsh-syntax-highlighting.git \
-~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
 #### Set hostname
