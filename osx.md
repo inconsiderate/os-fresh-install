@@ -3,9 +3,6 @@
 
 ```bash
 
-# install CLI developer tools because El Capitan is a bitch
-xcode-select --install
-
 # Enable character repeat on keydown
 defaults write -g ApplePressAndHoldEnabled -bool false
 
@@ -96,7 +93,7 @@ defaults write com.blizzard.worldofwarcraft disable-expose-fix -bool YES
 
 ```bash
 # install package manager
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install brew packages
 brew install \
@@ -105,17 +102,15 @@ node \
 ssh-copy-id \
 wget \
 ack \
-caskroom/cask/brew-cask \
+homebrew/cask \
 nginx
 ```
-
-#### Homebrew Cask Apps
 
 ```bash
 # install mac apps
 brew install \
 codekit \
-docker \
+homebrew/cask/docker \
 google-chrome \
 slack \
 discord \
