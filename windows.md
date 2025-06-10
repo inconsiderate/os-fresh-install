@@ -79,6 +79,7 @@ felixfbecker.php-debug
 GrapeCity.gc-excelviewer
 kisstkondoros.vscode-gutter-preview
 mblode.twig-language-2
+eamodio.gitlens
 mindpixel-labs.vsc-expressionengine
 mrmlnc.vscode-apache
 ms-azuretools.vscode-docker
